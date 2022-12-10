@@ -1,4 +1,4 @@
-# [Bronze III] 상근이의 친구들 - 5717 
+# [Bronze IV] 상근이의 친구들 - 5717 
 
 [문제 링크](https://www.acmicpc.net/problem/5717) 
 
