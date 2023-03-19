@@ -1,3 +1,3 @@
-Baekjoon of judge
-Programmers
+Baekjoon of judge / 
+Programmers / 
 SWEA
