@@ -1,1 +1,3 @@
-## 백준 알고리즘 저장소
+## Baekjoon of judge
+## Programmers
+## SWEA
