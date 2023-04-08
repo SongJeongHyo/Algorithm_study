@@ -1,32 +1,42 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <utility>
 #include <algorithm>
+#include <cmath>
+#include <sstream>
+#include <queue>
+#include <stack>
+#include <deque>
+#include <tuple>
+#include <stdint.h>
+#include <bitset>
+#include <set>
+
 using namespace std;
 
 int main() {
-	
-	int o, sam;
-	vector<int> vec(5001);
-	vector<int> O(5001);
-	vector<int> SAM(5001);
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 
 
-	for (o = 0; o <= 1000; o++) {
-		for (sam = 0; o * 5 + sam * 3 <= 5000; sam++) {
-			vec[o * 5 + sam * 3] = 1;
-			O[o * 5 + sam * 3] = o;
-			SAM[o * 5 + sam * 3] = sam;
-		}
+	int N;
+	cin >> N;
+	vector<int>dp(N + 1, 9999);
+
+	dp[3] = 1;
+	dp[5] = 1;
+
+	for (int i = 6; i <= N; i++) {
+		dp[i] = min(dp[i - 5] + 1, dp[i - 3] + 1);
 	}
-	int n;
-	cin >> n;
-	if (vec[n] == 0)
-	{
-		cout << -1 << endl;
-		return 0;
-	}
-	cout << O[n] + SAM[n] << endl;
 
+	if (dp[N] >= 9999) {
+		cout << "-1\n";
+	}
+	else {
+		cout << dp[N] << '\n';
+	}
 	return 0;
 }
