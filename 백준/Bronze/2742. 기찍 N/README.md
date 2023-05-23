@@ -1,4 +1,4 @@
-# [Bronze III] 기찍 N - 2742 
+# [Bronze IV] 기찍 N - 2742 
 
 [문제 링크](https://www.acmicpc.net/problem/2742) 
 
@@ -8,7 +8,7 @@
 
 ### 분류
 
-구현(implementation)
+구현
 
 ### 문제 설명
 
